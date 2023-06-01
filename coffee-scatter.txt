@@ -1,0 +1,10 @@
+coffee_process = coffee_df.groupby("Processing.Method")
+
+plt.scatter(coffee_df['altitude_mean_meters'],coffee_df['Total.Cup.Points'])
+plt.scatter(coffee_df['altitude_mean_meters'],coffee_df['Processing.Method'])
+plt.title("Altitude vs. Points")
+plt.xlabel("Altitude Mean Meters")
+plt.ylabel("Total Cup Points")
+plt.xlim(0,5000)
+plt.ylim(60,100)
+plt.show()
